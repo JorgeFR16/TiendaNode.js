@@ -1,0 +1,15 @@
+# Archivo que contiene las variables de entorno
+.env
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+
+# testing
+/coverage
+
+# production
+/build
+
