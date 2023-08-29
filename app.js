@@ -13,14 +13,6 @@ app.set('views', 'views');
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
-db.execute('SELECT * FROM products')
-  .then(result => {
-    console.log(result);
-  })
-  .catch(err => {
-    console.log(err);
-  });
-
 app.get('/favicon.ico', (req, res) => res.status(204));
 
 app.use(express.urlencoded({ extended: true }));
